@@ -439,3 +439,66 @@ p {
     border-color: transparent
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  /* Estilos para pantallas con un máximo de 768px de ancho */
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* Estilos para pantallas con un máximo de 800px de ancho */
+  .content {
+    height: 30vh;
+    width: 100%;
+  }
+  h1 {
+    font-size: 36px;
+  }
+}
+
+/* Estilos para pantallas con un ancho máximo de 480px */
+@media screen and (max-width: 480px) {
+  .banner_title h2 {
+    font-size: 40px;
+  }
+  .banner_title .llamanos {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para pantallas con un ancho máximo de 600px */
+@media screen and (max-width: 600px) {
+  .contenedor {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+/* Estilos para pantallas con un ancho máximo de 992px */
+@media screen and (max-width: 992px) {
+  .header_nav .contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header_nav nav a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Estilos para pantallas con un ancho mínimo de 1200px */
+@media screen and (min-width: 1200px) {
+  .contenedor {
+    padding: 0;
+  }
+}

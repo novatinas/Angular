@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 
 //  Inicio Carga scripts
 import { CargarScriptService } from './cargar-script.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // Fin Carga Scripts
 
 
@@ -16,7 +17,8 @@ import { CargarScriptService } from './cargar-script.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [Meta],
   bootstrap: [AppComponent],

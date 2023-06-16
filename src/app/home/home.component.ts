@@ -16,7 +16,16 @@ export class HomeComponent {
   
   ngOnInit() {
     this.metaService.addTag( { name:'Novatinas.cl',content:"Article Description"});
+
     
+    this.metaService.addTags([  
+      { name: 'keywords', content: 'Angular SEO Title, Meta Description, Meta Keyword Example' },  
+      { name: 'robots', content: 'index, follow' },  
+      { name: 'writer', content: 'John Smith' },  
+      { charset: 'UTF-8' }  
+    ]);  
+    
+    this.metaService.removeTag('name="writer"');  
   }
   
   

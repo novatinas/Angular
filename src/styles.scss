@@ -3682,12 +3682,12 @@ textarea.form-control-lg {
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
-  --bs-nav-link-disabled-color: #6c757d;
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+ 
 }
 
 .nav-link {
@@ -3825,6 +3825,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
+
 .navbar > .container,
 .navbar > .container-fluid,
 .navbar > .container-sm,
@@ -3888,6 +3889,7 @@ textarea.form-control-lg {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  text-align: center;
 }
 
 .navbar-toggler {
@@ -10981,16 +10983,26 @@ html {
 body {
   letter-spacing: 0.0625em;
 }
-
+.imgMenu{
+  width: 15px;
+}
 #mainNav {
   min-height: 3.5rem;
   background-color: #fff;
 }
+.LogoNova{
+  width: 100px;
+  margin-left: 3px;
+}
+.ImagenNovaPrinc{
+  width: 300px;
+}
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #000;
+  font-weight: bold;
+  border: 3px solid #000;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -11231,9 +11243,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  min-height: 400px;
-  height: 110vh;
-  max-width: 1000px;
+  height: 310vh;
   margin: auto;
   background-color: #fff;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
@@ -11248,7 +11258,7 @@ body {
 }
 
 #left-zone {
-  height: 50%;
+  height: 80%;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -11847,22 +11857,7 @@ body {
         }
     }
 }
-.wrapper {
-  height: 12vh;
-  /*This part is important for centering*/
-  display: grid;
-  place-items: center;
-}
 
-.typing-demo {
-  width: 25ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
-}
 
 @keyframes typing {
   from {
@@ -11882,29 +11877,7 @@ body {
   }
 }
 
-.typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .12em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-    text-align: center;
-}
 
-/* Efecto maquina de escribir */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* Efecto parpadeo Escribir */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #00b16aa3; }
-}
 
 #myVideo {
   position: fixed;
@@ -11914,3 +11887,60 @@ body {
   min-height: 100%;
   z-index: -1;
 }
+
+
+
+.type {
+  color:#0000;
+  background: linear-gradient(-90deg, #000 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#000 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  font-weight: bold ;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  text-align: center;
+  font-size: 40px;
+  animation: 
+  typing 3.5s steps(40, end),
+  t calc(var(--n)*.1s) steps(var(--n)) forwards;
+}
+
+@keyframes t{
+  from {background-size:0 100%}
+}
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}
+
+
+
+
+.image-container {
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  font-weight: bold;
+}
+
+.image-container:hover {
+  animation: breathe 2s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.row{
+  text-align: center;
+}
+
+
+
+

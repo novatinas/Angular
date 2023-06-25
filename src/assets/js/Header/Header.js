@@ -52,5 +52,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
-
+$('#myCarousel').carousel({
+    interval: 3000,
+ })
 

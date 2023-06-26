@@ -22,9 +22,12 @@ export class HomeComponent {
       { name: 'keywords', content: 'Angular SEO Title, Meta Description, Meta Keyword Example' },  
       { name: 'robots', content: 'index, follow' },  
       { name: 'writer', content: 'John Smith' },  
-      { charset: 'UTF-8' }  
+      { charset: 'UTF-8' },  
+      {name:"viewport", content:"width=device-width, initial-scale=1.0"}
+
     ]);  
     
+
     this.metaService.removeTag('name="writer"');  
   }
   

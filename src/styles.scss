@@ -11635,17 +11635,19 @@ height:100%;
   
 }
 #myCarousel h4{
-font-size:50px;
+font-size:40px;
 margin-bottom:15px;
 color:#FFF;
 line-height:100%;
 letter-spacing:0.5px;
 font-weight:600;
+text-align: center;
 }
 #myCarousel p{
 font-size:18px;
 margin-bottom:15px; 
 color:#d5d5d5;
+text-align: center;
 }
 #myCarousel .carousel-item a{background:#F47735; font-size:14px; color:#FFF; padding:13px 32px; display:inline-block; }
 #myCarousel .carousel-item a:hover{background:#394fa2; text-decoration:none;  }
@@ -11658,10 +11660,10 @@ color:#d5d5d5;
   animation-duration: 1.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  
+  text-align: center;
 }
-#myCarousel .container {max-width: 1500px;  }
-#myCarousel .carousel-item{height:100%; min-height:550px; }
+#myCarousel .container {max-width: 1500px; text-align: center; }
+#myCarousel .carousel-item{height:100%; min-height:550px; text-align: center;}
 #myCarousel{position:relative; z-index:1; background:url(https://i.imgur.com/6axE29k.jpg) center center no-repeat; background-size:cover; }
 
 
@@ -11701,26 +11703,31 @@ color:#d5d5d5;
   color: #FFF;
   padding: 13px 32px;
   display: inline-block;
+  text-align: center;
 }
 
 #myCarousel12 .carousel-item a:hover {
   background: #394fa2;
   text-decoration: none;
+  text-align: center;
 }
 
 #myCarousel12 .carousel-item h4 {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
+  text-align: center;
 }
 
 #myCarousel12 .carousel-item p {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
+  text-align: center;
 }
 
 #myCarousel12 .carousel-item a {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+  text-align: center;
 }
 
 #myCarousel12 .carousel-item .mask img {
@@ -11729,6 +11736,7 @@ color:#d5d5d5;
   display: block;
   height: auto;
   max-width: 100%;
+  text-align: center;
 }
 
 #myCarousel12 h4,
@@ -11739,11 +11747,13 @@ color:#d5d5d5;
   animation-duration: 1.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  text-align: center;
 }
 
 #myCarousel12 .carousel-item video {
   opacity: 0;
   transition: opacity 0.5s ease;
+  text-align: center;
 }
 
 #myCarousel12 .carousel-item video.fade {
@@ -11767,6 +11777,7 @@ color:#d5d5d5;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
+  text-align: center;
   
 }
 .carousel-fade .carousel-item {

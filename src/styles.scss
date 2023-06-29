@@ -106,8 +106,12 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+  cursor: url('../src/assets/src/img/ElefanteFeliz.svg'), auto;
 
+}
+.custom-cursor {
+  cursor: url('../src/assets/src/img/ElefanteFeliz2.svg'), auto;
+}
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -11530,11 +11534,92 @@ body {
   text-align: center;
 }
 
+/* Estilos personalizados para los controles del video */
+video::-webkit-media-controls-panel::cue {
+  /* Estilos para los controles */
+  background-color: #000;
+}
+
+video::-webkit-media-controls-play-button::cue {
+  /* Estilos para el botón de reproducción */
+  color: #fff;
+}
+
+video::-webkit-media-controls-timeline::cue {
+  /* Estilos para la línea de tiempo */
+  background-color: #ff0000;
+}
+
+video::-webkit-media-controls-current-time-display::cue {
+  /* Estilos para la visualización del tiempo actual */
+  color: #00ff00;
+}
+
+video::-webkit-media-controls-time-remaining-display::cue {
+  /* Estilos para la visualización del tiempo restante */
+  color: #0000ff;
+}
+
+video::-webkit-media-controls-mute-button::cue {
+  /* Estilos para el botón de silencio */
+  color: #ff00ff;
+}
+
+video::-webkit-media-controls-volume-slider::cue {
+  /* Estilos para el control deslizante de volumen */
+  background-color: #ffff00;
+}
+
+/* Agrega estilos adicionales según tus necesidades */
 
 
-.video-fluid{
-  height: 70%;
+
+.video-fluid {
+  height: 80%;
   width: 100%;
+  object-fit: cover;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  border-radius: 20px;
+}
+.video-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 19px;
+  box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.8);
+  margin-bottom: 0; /* Agrega esta regla para eliminar el margen inferior */
+
+}
+.video-container video {
+  display: block; /* Asegura que el elemento <video> se comporte como un bloque */
+}
+.video-container:hover {
+  animation: breathe 2s infinite;
+}
+
+/* Resto de tu código CSS */
+
+
+@keyframes breathe-video {
+  0% {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 
@@ -11579,7 +11664,93 @@ color:#d5d5d5;
 #myCarousel .carousel-item{height:100%; min-height:550px; }
 #myCarousel{position:relative; z-index:1; background:url(https://i.imgur.com/6axE29k.jpg) center center no-repeat; background-size:cover; }
 
-.carousel-control-next, .carousel-control-prev{height:40px; width:40px; padding:12px; top:50%; bottom:auto; transform:translateY(-50%); background-color: #0d6efd; }
+
+#myCarousel12 {
+  position: relative;
+  z-index: 1;
+  background: url("../src/assets/src/img/Burbujasslide.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+#myCarousel12 .carousel-item .mask {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+#myCarousel12 h4 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #FFF;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+#myCarousel12 p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #d5d5d5;
+}
+
+#myCarousel12 .carousel-item a {
+  background: #F47735;
+  font-size: 14px;
+  color: #FFF;
+  padding: 13px 32px;
+  display: inline-block;
+}
+
+#myCarousel12 .carousel-item a:hover {
+  background: #394fa2;
+  text-decoration: none;
+}
+
+#myCarousel12 .carousel-item h4 {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+#myCarousel12 .carousel-item p {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+#myCarousel12 .carousel-item a {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+#myCarousel12 .carousel-item .mask img {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+#myCarousel12 h4,
+#myCarousel12 p,
+#myCarousel12 a,
+#myCarousel12 .carousel-item .mask img {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+#myCarousel12 .carousel-item video {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#myCarousel12 .carousel-item video.fade {
+  opacity: 1;
+}
+
+.carousel-control-next, .carousel-control-prev{height:40px; width:40px; padding:12px; top:50%; bottom:auto; transform:translateY(-50%); background-color: #0d6efd; cursor: url('../src/assets/src/img/ElefanteFeliz2.svg'), auto; }
 
 
 .carousel-item {
@@ -11738,4 +11909,37 @@ animation-name: slideInRight;
 
 h1 {
   font-family: 'Planet Comic', sans-serif; /* Aplica la fuente a los elementos h1 */
+}
+
+.waviy {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  font-family: 'Planet Comic', sans-serif; /* Aplica la fuente a los elementos h1 */
+  
+}
+
+.waviy span {
+  --i: 0;
+  animation: waviy 1s infinite;
+  background-color: #A9C9FF;
+  background-image: linear-gradient(315deg, #A9C9FF 0%, #FFBBEC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #000000;
+  letter-spacing: 3px;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+
 }

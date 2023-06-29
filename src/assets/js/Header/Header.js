@@ -56,3 +56,9 @@ $('#myCarousel').carousel({
     interval: 3000,
  })
 
+
+ $('#myCarousel12').carousel({
+    interval: 3000,
+ })
+
+

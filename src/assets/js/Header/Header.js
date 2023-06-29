@@ -62,3 +62,8 @@ $('#myCarousel').carousel({
  })
 
 
+ function scrollToCarousel() {
+    $('html, body').animate({
+      scrollTop: $('#aqui').offset().top
+    }, 800); // Velocidad del desplazamiento en milisegundos
+  }

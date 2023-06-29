@@ -11670,20 +11670,20 @@ text-align: center;
 #myCarousel12 {
   position: relative;
   z-index: 1;
-  background: url("../src/assets/src/img/Burbujasslide.jpg") center center no-repeat;
+  background: url("../src/assets/src/img/containerslider.svg") center center/cover no-repeat;
   background-size: cover;
 }
 
 #myCarousel12 .carousel-item .mask {
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
   background-attachment: fixed;
+
 }
 
 #myCarousel12 h4 {
-  font-size: 50px;
+  font-size: 50px; 
   margin-bottom: 15px;
   color: #FFF;
   line-height: 100%;
@@ -11737,6 +11737,8 @@ text-align: center;
   height: auto;
   max-width: 100%;
   text-align: center;
+    height: 100vh; /* Establece la altura del elemento del carrusel al 100% del alto de la ventana */
+
 }
 
 #myCarousel12 h4,
@@ -11778,7 +11780,8 @@ text-align: center;
   -webkit-perspective: 1000px;
   perspective: 1000px;
   text-align: center;
-  
+  height: 60vh; /* Establece la altura del elemento del carrusel al 100% del alto de la ventana */
+
 }
 .carousel-fade .carousel-item {
 opacity: 0;
@@ -11809,6 +11812,10 @@ transform:translate3d(0, 0, 0)
   transform: translate3d(0,0,0);
 }
 
+#myCarousel12 .carousel-inner {
+  width: 100%;
+  overflow: hidden;
+}
 
 
 @-webkit-keyframes fadeInLeft {

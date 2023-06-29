@@ -11780,8 +11780,7 @@ text-align: center;
   -webkit-perspective: 1000px;
   perspective: 1000px;
   text-align: center;
-  height: 60vh; /* Establece la altura del elemento del carrusel al 100% del alto de la ventana */
-
+  
 }
 .carousel-fade .carousel-item {
 opacity: 0;
@@ -11812,10 +11811,6 @@ transform:translate3d(0, 0, 0)
   transform: translate3d(0,0,0);
 }
 
-#myCarousel12 .carousel-inner {
-  width: 100%;
-  overflow: hidden;
-}
 
 
 @-webkit-keyframes fadeInLeft {

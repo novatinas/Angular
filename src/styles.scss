@@ -11670,8 +11670,9 @@ text-align: center;
 #myCarousel12 {
   position: relative;
   z-index: 1;
-  background: url(../src/assets/src/img/ContenedorSlider.svg) center center no-repeat;
-  background-size: cover;
+  background-image: linear-gradient(to bottom right, #0100EC, #FB36F4);
+
+
 }
 
 #myCarousel12 .carousel-item .mask {
@@ -11919,6 +11920,7 @@ animation-name: slideInRight;
 
 h1 {
   font-family: 'Planet Comic', sans-serif; /* Aplica la fuente a los elementos h1 */
+  text-align: center; font-family: 'Planet Comic', sans-serif; background-color: #A9C9FF; background-image: linear-gradient(315deg, #A9C9FF 0%, #FFBBEC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 2px #000000;
 }
 
 .waviy {
@@ -11974,4 +11976,9 @@ h1 {
   .waviy {
     font-size: 3rem;
   }
+}
+
+.vanitorio{
+  background-image: linear-gradient(315deg, #A9C9FF 0%, #FFBBEC 100%);
+
 }

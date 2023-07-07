@@ -12014,7 +12014,8 @@ h1 {
 
 body {
 
-  .textcontainer {padding:40px 0;text-align:center;}
+  .textcontainer {padding:40px 0;text-align:center;  margin-bottom: 20px; /* Ajusta el margen inferior del contenedor de texto según sea necesario */
+  }
   .particletext {
      text-align:center;
      font-size:50px;
@@ -12200,9 +12201,11 @@ body {
      opacity:1;
   }
 }
-
-
-.TextIm{
+.TextIm {
   background-image: url("../src/assets/src/img/ContenedorTextos.svg");
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  border-radius: 70px;
+  padding: 20px; /* Ajusta el espaciado interior del contenedor según sea necesario */
 }

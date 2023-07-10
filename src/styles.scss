@@ -12202,12 +12202,12 @@ body {
   }
 }
 .TextIm {
-border-radius: 5px;
-border-color: #000;
-border-style: double;
-background: url('../src/assets/src/img/Sin\ título-1.png');
-background-size: cover;
-opacity: 0.5;
- 
-
+  border-radius: 5px;
+  border-color: #000;
+  border-style: ridge;
+  background: rgba(0, 0, 0, 0.2); /* Rango de 0.0 a 1.0, donde 0.0 es completamente transparente y 1.0 es completamente opaco */
+  background-image: url('../src/assets/src/img/Sin.png');
+  background-size: cover;
+  border-radius: 50px;
 }
+ 

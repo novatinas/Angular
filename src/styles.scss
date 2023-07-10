@@ -12202,10 +12202,10 @@ body {
   }
 }
 .TextIm {
-  background-image: url("../src/assets/src/img/ContenedorTextos.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  border-radius: 70px;
-  padding: 20px; /* Ajusta el espaciado interior del contenedor según sea necesario */
+border-radius: 5px;
+border-color: #000;
+border-style: double;
+background: url('../src/assets/src/img/17.jpg');
+
+
 }

@@ -12218,3 +12218,21 @@ body {
   box-shadow: 0 0 80px rgba(161, 234, 254, 1.9); /* Ajusta los valores según tus preferencias */
 }
  
+
+.float{
+	position:fixed;
+	width:150px;
+	height:100px;
+	bottom:340px;
+	right:40px;
+
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  background-image: url("../src/assets/src/img/aguasap.svg");  
+  z-index: 1;
+}
+
+.my-float{
+	margin-top:22px;
+}

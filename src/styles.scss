@@ -11670,15 +11670,21 @@ text-align: center;
 #myCarousel12 {
   position: relative;
   z-index: 1;
-  background-image: linear-gradient(to bottom right, #0100EC, #FB36F4);
-
+  border-radius: 5px;
+  border-color: #000;
+  border-style: ridge;
+  background: rgba(0, 0, 0, 0.2); /* Rango de 0.0 a 1.0, donde 0.0 es completamente transparente y 1.0 es completamente opaco */
+  background-image: url('../src/assets/src/img/fondoslider.png');
+  background-size: cover;
+  border-radius: 50px;
+  box-shadow: 0 0 80px rgba(161, 234, 254, 1.9); /* Ajusta los valores según tus preferencias */
 
 }
 
 #myCarousel12 .carousel-item .mask {
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100%;  
   width: 100%;
   background-attachment: fixed;
 }

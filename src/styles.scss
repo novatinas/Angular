@@ -12231,8 +12231,16 @@ body {
 	text-align:center;
   background-image: url("../src/assets/src/img/aguasap2.svg");  
   z-index: 1;
+  animation: floatBreathe 2s infinite ease-in-out; /* Ahora la animación se llama floatBreathe */
+
 }
 
 .my-float{
 	margin-top:22px;
+}
+
+@keyframes floatBreathe {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); } /* El elemento se expande al 105% */
+  100% { transform: scale(1); }
 }

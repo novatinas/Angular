@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CargarScriptService } from '../cargar-script.service';
 import { BrowserModule, Meta } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +9,14 @@ import { BrowserModule, Meta } from '@angular/platform-browser';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  constructor (private _CargaScripts:CargarScriptService, private metaService:Meta)
+  constructor (private _CargaScripts:CargarScriptService, private metaService:Meta,private router: Router)
   {
     _CargaScripts.Carga(["Header/Header"]);
     
   }
-  
+  redirigirNosotros() {
+    this.router.navigate(['/Nosotros']);
+  }
   ngOnInit() {
     this.metaService.addTag( { name:'Novatinas.cl',content:"NovaTinas ofrece el servicio de esmaltado de tinas sin necesidad de quitarlas del lugar. Utilizamos el producto de alta durabilidad Permaglas, proveniente de Estados Unidos 🇺🇸. Nuestro trabajo toma aproximadamente 2 horas, seguido de un presecado de 48 horas. Disfruta de una tina renovada y garantizada por un año. ¡Solicita una cotización a través de WhatsApp enviándonos fotografías del artefacto! Somos líderes en el reesmaltado de una amplia variedad de productos, incluyendo tinas, jacuzzis, lavamanos, vanitorios, lavaplatos, tinas plásticas y más. Contáctanos para obtener una cotización personalizada y transforma tu baño con nuestro servicio de calidad., Novatinas.cl,Esmaltado de tinas, Reesmaltado, Permaglas, Servicio de esmaltado, Tina renovada, Garantía por un año, Esmaltado de jacuzzis, Lavamanos esmaltados, Vanitorios esmaltados, Lavaplatos esmaltados, Tina plástica esmaltada, Cotización personalizada." });
 

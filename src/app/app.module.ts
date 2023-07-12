@@ -3,7 +3,7 @@ import { BrowserModule, Meta } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-
+import { RouterModule } from '@angular/router';
 
 
 //  Inicio Carga scripts
@@ -22,10 +22,10 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterModule // Agrega RouterModule aquí
   ],
   providers: [Meta],
-  bootstrap: [AppComponent],
-  
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

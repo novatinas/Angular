@@ -7,7 +7,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: NosotrosComponent },
   { path: 'Nosotros', component: NosotrosComponent }
 
 ];

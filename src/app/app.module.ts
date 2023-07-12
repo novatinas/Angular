@@ -7,13 +7,15 @@ import { HomeComponent } from './home/home.component';
 //  Inicio Carga scripts
 import { CargarScriptService } from './cargar-script.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NosotrosComponent } from './nosotros/nosotros.component';
 // Fin Carga Scripts
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NosotrosComponent
   ],
   imports: [
     BrowserModule,

@@ -12219,48 +12219,6 @@ body {
 }
  
 
-.float{
-	position:fixed;
-	width:60px;
-	height:85px;
-	bottom:140px;
-	right:45px;
 
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  background-image: url("../src/assets/src/img/aguasap2.svg");  
-  z-index: 1;
-  animation: floatBreathe 2s infinite ease-in-out; /* Ahora la animación se llama floatBreathe */
-
-}
-
-.my-float{
-	margin-top:22px;
-}
-
-@keyframes floatBreathe {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); } /* El elemento se expande al 105% */
-  100% { transform: scale(1); }
-}
-
-/* Esto aplica los estilos a la barra de desplazamiento en su conjunto */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Esto aplica los estilos a la barra deslizante en sí (el "pulgar") */
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, deepskyblue, dodgerblue, mediumblue); 
-  border-radius: 10px;
-  border-color: #A9C9FF;
-  border-style: ridge;
-}
-
-/* Esto aplica los estilos a la pista de la barra de desplazamiento (la "ranura") */
-::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, lightblue, skyblue, powderblue);
-}
 
 

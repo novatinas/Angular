@@ -8,7 +8,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: '#/Nosotros', component: NosotrosComponent }
+  { path: 'Nosotros', component: NosotrosComponent }
 
 ];
 @NgModule({

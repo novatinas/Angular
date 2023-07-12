@@ -4,6 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
+
+
 //  Inicio Carga scripts
 import { CargarScriptService } from './cargar-script.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';

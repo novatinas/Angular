@@ -3828,6 +3828,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+
 }
 
 .navbar > .container,
@@ -11372,84 +11373,6 @@ body {
     background-color: rgba($iconColor, 0.05);
 }
 
-.social-container {
-    width: 400px;
-    margin: 2vh auto;
-    text-align: center;
-}
-
-.social-icons {
-    padding: 0;
-    list-style: none;
-    margin: 1em;
-  
-    li {
-        display: inline-block;
-        margin: 0.1em;
-        position: relative;
-        font-size: 1.2em;
-
-    }
-
-    i {
-        color: #fff;
-        position: absolute;
-        top: 21px;
-        left: 21px;
-        transition: all $timing ease-out;
-    }
-
-    a {
-        display: inline-block;
-      
-        &:before {
-            @include transformScale();
-            content: " ";
-            width: 60px;
-            height: 60px;
-            border-radius: 100%;
-            display: block;
-            background: linear-gradient(45deg, $iconColor, $accent);
-            transition: all $timing ease-out;
-        }
-        
-        &:hover:before {
-            transform: scale(0);
-            transition: all $timing ease-in;
-        }
-        
-        &:hover i {
-            @include transformScale(2.2);
-            color: $iconColor;
-            background: -webkit-linear-gradient(45deg, $iconColor, $accent);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: all $timing ease-in;
-        }
-    }
-  
-    a.social-square {
-      
-        &:before {
-            background: linear-gradient(45deg, $grape, $orchid);
-            border-radius: 10%;
-        }
-      
-        &:hover:before {
-            transform: rotate(-180deg);
-            -ms-transform: rotate(-180deg);
-            -webkit-transform: scale(-180deg);
-            border-radius: 100%;
-        }
-        
-        &:hover i {
-            @include transformScale(1.6);
-            color: #fff;
-            transform: scale(1.6);
-            -webkit-text-fill-color: #fff;
-        }
-    }
-}
 
 
 @keyframes typing {
@@ -11916,17 +11839,15 @@ animation-name: slideInRight;
 
 
 @font-face {
-  font-family: 'Planet Comic';
-  src: url("../src/assets/src/fonts/PlanetComic.ttf") format('truetype'); /* Reemplaza 'planetcomic.ttf' si el nombre del archivo es diferente */
-  /* O puedes usar el siguiente formato si el archivo de fuente tiene la extensión .otf */
-  /* src: url('fonts/planetcomic.otf') format('opentype'); */
+  font-family: 'Motley';
+  src: url('../src/assets/src/fonts/Motley.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 h1 {
-  font-family: 'Planet Comic', sans-serif; /* Aplica la fuente a los elementos h1 */
-  text-align: center; font-family: 'Planet Comic', sans-serif; background-color: #A9C9FF; background-image: linear-gradient(315deg, #A9C9FF 0%, #FFBBEC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 2px #000000;
+  font-family: 'Motley', sans-serif;
+  text-align: center; font-family: 'Motley', sans-serif; background-color: #A9C9FF; background-image: linear-gradient(315deg, #A9C9FF 0%, #FFBBEC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: 2px #000000;
 }
 
 .waviy {
@@ -11935,7 +11856,7 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 5vh;
-  font-family: 'Planet Comic', sans-serif;
+  font-family: 'Motley', sans-serif;
 }
 .waviy span:nth-child(9) {
   margin-right: 10px; /* Ajusta el valor del margen derecho según tus necesidades */
@@ -12027,6 +11948,7 @@ body {
      font-size:50px;
      position: relative;
      color: #0d6efd;
+     font-family: 'Motley', sans-serif;
      &.bubbles {
         >.particle {
            opacity:0;
@@ -12034,6 +11956,7 @@ body {
            background-color:rgba(33,150,243,0.5);
            animation: bubbles 3s ease-in infinite;
            border-radius:100%;
+           
         }
      }
      &.hearts {
@@ -12218,6 +12141,65 @@ body {
   box-shadow: 0 0 80px rgba(161, 234, 254, 1.9); /* Ajusta los valores según tus preferencias */
 }
  
+.social-container {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  padding: 20px;
+  border-radius: 20px;
+  position: relative; /* Necesario para posicionar correctamente el pseudo-elemento. */
+  z-index: 1; /* Asegura que el contenido del contenedor se muestre por encima del pseudo-elemento. */
+}
+
+/* Pseudo-elemento para la sombra de caja con gradiente. */
+.social-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px;
+  z-index: -1; /* Posiciona el pseudo-elemento detrás del contenido del contenedor. */
+  filter: blur(10px); /* Crea el efecto de sombra difuminada. */
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0.5em;
+}
+
+.social-icon img {
+  width: 50px;
+  height: auto;
+  transition: filter 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.social-icon:hover img {
+  filter: brightness(50%);
+}
+
+@keyframes pulse {
+0% {
+  transform: scale(1);
+}
+50% {
+  transform: scale(1.1);
+}
+100% {
+  transform: scale(1);
+}
+}
 
 
 

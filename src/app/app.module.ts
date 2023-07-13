@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { CargarScriptService } from './cargar-script.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NosotrosComponent } from './nosotros/nosotros.component';
+import { ProyectosComponent } from './proyectos/proyectos.component';
 // Fin Carga Scripts
 
 
@@ -17,7 +18,8 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    NosotrosComponent
+    NosotrosComponent,
+    ProyectosComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +28,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
     RouterModule // Agrega RouterModule aquí
   ],
   providers: [Meta],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }

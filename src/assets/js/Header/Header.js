@@ -216,4 +216,3 @@ elImages.forEach(figure => {
   });
 });
 
-

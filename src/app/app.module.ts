@@ -11,6 +11,7 @@ import { CargarScriptService } from './cargar-script.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
+import { ContactoComponent } from './contacto/contacto.component';
 // Fin Carga Scripts
 
 
@@ -19,7 +20,8 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
     AppComponent,
     HomeComponent,
     NosotrosComponent,
-    ProyectosComponent
+    ProyectosComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

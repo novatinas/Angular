@@ -8252,12 +8252,12 @@ textarea.form-control-lg {
 
 .text-black-50 {
   --bs-text-opacity: 1;
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(0, 0, 0, 1) !important;
 }
 
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 .text-reset {
@@ -11140,7 +11140,8 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
+  border-radius: 150px;
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -11235,11 +11236,13 @@ body {
 }
 
 $spacer-height: 20vw;
-$section1-bg-color: #ffffff;
-$section2-bg-color: #FFD2B0;
-$section3-bg-color: #384364;
-$section4-bg-color: #cccccc;
-$section5-bg-color: #333333;
+$section1-bg-color: #12232E; // Azul oscuro
+$section1-bg-color: #3caea3; // Azul claro
+$section2-bg-color: #0c7b93; // Azul medio claro
+$section3-bg-color: #27496d; // Azul medio
+$section4-bg-color: #203647; // Azul medio oscuro
+$section5-bg-color: #12232E; // Azul oscuro
+
 
 @mixin bubbles($bubbles-type, $color)
 {

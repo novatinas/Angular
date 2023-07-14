@@ -1,7 +1,8 @@
 $spacer-height: 20vw;
-$section3-bg-color: #3c6438;
-$section4-bg-color: #0a0303;
-$section5-bg-color: #c27a7a;
+$section3-bg-color: #27496d; // Un tono de azul oscuro
+$section4-bg-color: #0c7b93; // Un azul medio
+$section5-bg-color: #3caea3; // Una variante más suave del segundo azul
+
 
 @mixin bubbles($bubbles-type, $color)
 {

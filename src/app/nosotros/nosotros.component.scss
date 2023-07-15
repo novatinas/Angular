@@ -101,3 +101,40 @@ $section5-bg-color: #12232E; // Azul oscurol
     animation-iteration-count: infinite;
   }
 
+  .floating-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFFFFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    animation: pulse 2s infinite;
+    top: 50%; /* Ubicamos el botón al 50% desde el borde superior de la ventana */
+    right: 1%; /* Ubicamos el botón en el borde derecho de la ventana */
+    transform: translateY(-50%); /* Desplazamos el botón hacia arriba en un 50% de su propio tamaño, para centrarlo correctamente */
+
+}
+
+.floating-button img {
+    width: 100%;
+    height: auto;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

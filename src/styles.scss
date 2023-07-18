@@ -12181,14 +12181,15 @@ body {
 }
 
 .social-icon img {
-  width: 50px;
+  width: 80px;
   height: auto;
   transition: filter 0.3s ease;
   animation: pulse 2s infinite;
+  filter: brightness(60%);
 }
 
 .social-icon:hover img {
-  filter: brightness(50%);
+  filter: brightness(100%);
 }
 
 @keyframes pulse {

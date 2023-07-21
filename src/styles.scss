@@ -11494,7 +11494,15 @@ video::-webkit-media-controls-volume-slider::cue {
 }
 
 /* Agrega estilos adicionales según tus necesidades */
-
+.video-fluid2 {
+  height: 40%;
+  width: 40%;
+  object-fit: contain;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  border-radius: 20px;
+}
 
 
 .video-fluid {

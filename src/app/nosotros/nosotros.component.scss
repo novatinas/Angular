@@ -138,3 +138,26 @@ $section5-bg-color: #12232E; // Azul oscurol
         transform: scale(1);
     }
 }
+
+
+/* Para Google Chrome y Safari */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(#ffffff, #0c7b93, #27496d, #203647); /* Degradado invertido en la pista */
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0c7b93; /* Azul cielo para la barra de desplazamiento */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 1px #FFBBEC;
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin; /* Ancho de la barra de desplazamiento */
+  scrollbar-color: #0c7b93 #ffffff; /* color de la barra y del fondo */
+}

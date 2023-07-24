@@ -11128,10 +11128,18 @@ body {
     font-size: 1.25rem;
   }
 }
+@keyframes updown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.updown-img {
+  animation: updown 2s ease-in-out infinite;
+}
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  background: #fff;
 }
 .about-section p {
   margin-bottom: 5rem;
@@ -12249,4 +12257,30 @@ body {
   100% {
       transform: scale(1);
   }
+}
+
+
+
+
+
+/* Para Google Chrome y Safari */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(#ffffff, #0c7b93, #27496d, #203647); /* Degradado invertido en la pista */
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0c7b93; /* Azul cielo para la barra de desplazamiento */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 1px #FFBBEC;
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin; /* Ancho de la barra de desplazamiento */
+  scrollbar-color: #0c7b93 #ffffff; /* color de la barra y del fondo */
 }

@@ -18,8 +18,8 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
  "
   class="navbar navbar-expand-lg navbar-light " id="mainNav">
   <div class="container px-4 px-lg-5">
-    <img style="height: 50px" class="LogoNova" src="../../assets/src/img/LogoNova.svg" alt="">
-    <a class="navbar-brand" href="#page-top" style="color: black; font-weight: bold;">Novatinas.cl</a>
+    <a [routerLink]="['/']"><img style="height: 50px" class="LogoNova" src="../../assets/src/img/LogoNova.svg" alt=""></a>
+    <a class="navbar-brand" routerLink="/" style="color: black; font-weight: bold;">Novatinas.cl</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
       data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
       aria-label="Toggle navigation">
@@ -71,7 +71,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
         <div class="row">
           <div class="col-md-2">
             <div class="image-container custom-cursor">
-              <a href="#myCarousel12" data-bs-slide-to="0" onclick="scrollToCarousel()">
+              <a href="#myCarousel12" data-bs-slide-to="0" onclick="scrollToCarousel('#myCarousel12')">
                 <img src="../../assets/src/img/Vanitorios.svg" class="img-fluid" alt="Imagen 1">
               </a>
               <h5>Vanitorios</h5>
@@ -154,7 +154,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                         </div>
                         <div class="col-md col-sm-6 col-12">
                           <img src="../../assets/src/img/perfo2.png" class="mx-auto d-block" alt="slide">
-                          <h4>Despues</h4>
+                          <h4>Después</h4>
                         </div>
                       </div>
 
@@ -178,10 +178,12 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                       </div>
                       <div style="margin-top: 15px;" class="row">
                         <div class="col-md col-sm-6 col-12">
-                          <img src="../../assets/src/img/bg-signup.jpg" class="mx-auto d-block" alt="slide">
+                          <img src="../../assets/src/img/desgaste.png" class="mx-auto d-block" alt="slide">
+                          <h4>Antes</h4>
                         </div>
                         <div class="col-md col-sm-6 col-12">
-                          <img src="../../assets/src/img/bg-signup.jpg" class="mx-auto d-block" alt="slide">
+                          <img src="../../assets/src/img/desgaste2.png" class="mx-auto d-block" alt="slide">
+                          <h4>Después</h4>
                         </div>
                       </div>
 
@@ -205,10 +207,12 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                       </div>
                       <div style="margin-top: 15px;" class="row">
                         <div class="col-md col-sm-6 col-12">
-                          <img src="../../assets/src/img/bg-signup.jpg" class="mx-auto d-block" alt="slide">
+                          <img src="../../assets/src/img/oxido1.png" class="mx-auto d-block" alt="slide">
+                          <h4>Antes</h4>
                         </div>
                         <div class="col-md col-sm-6 col-12">
-                          <img src="../../assets/src/img/bg-signup.jpg" class="mx-auto d-block" alt="slide">
+                          <img src="../../assets/src/img/oxido2.png" class="mx-auto d-block" alt="slide">
+                          <h4>Después</h4>
                         </div>
                       </div>
 
@@ -236,23 +240,68 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
       <br>
       <section class="about-section text-center" id="about">
         <div class="container px-4 px-lg-5">
-          <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+              <div style="background-color:rgba(28, 134, 204, 0.555); border-radius: 30px; box-shadow: 10px 10px 5px rgb(24, 14, 160);" class="col-lg-6">
+                <h2 class="text-white mb-4">Novatinas.cl</h2>
+                <p class="text-white-50">
+                    Contamos con un amplio conocimiento en reparación y esmaltado de Tinas, Vanitorios Lavamanos, Lavaplatos  y más <br> 
+                    Solo ponte en contacto con nosotros.
+                </p>
 
-              <h2 class="text-white mb-4">Built with Bootstrap 5</h2>
+            </div>
+            
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <img class="img-fluid updown-img" src="../../assets/src/img/stars.svg" alt="..." />
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <br>
+    </div>
 
-              <p class="text-white-50">
-                Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply
-                download the template on
-                <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
-                The theme is open source, and you can use it for any purpose, personal or commercial.
-              </p>
+    <div class="container">
+
+      
+      <section class="projects-section bg-light" id="projects">
+          <div class="container px-4 px-lg-5">
+            <!-- Featured Project Row-->
+            <div class="align-items-center">
+              <div class="">
+                <div class="featured-text text-center text-lg-left">
+                  <h4 style="font-family: 'Motley', sans-serif;">Nuestros metodos de pago son :</h4>
+                  <p class="text-black-50 mb-0">"Contamos con diversas modalidades de pago"</p>
+                </div>
+                <br>
+                <br>
+                <!-- Image row -->
+                <div class="row text-center text-lg-left">
+                  <div class="col-4">
+                    <img style="border-radius: 35px; box-shadow: 0px 0px 30px rgba(9, 45, 145, 0.5);" src="../../assets/src/img/hacer-trasnferencia-bancaria.jpg" class="img-fluid zoom" alt="Imagen 1">
+                    <br>
+                    <br>
+                    <h4>Transferencias</h4>
+                </div>
+                <div class="col-4">
+                    <img style="border-radius: 35px; box-shadow: 0px 0px 30px rgba(9, 45, 145, 0.5);" src="../../assets/src/img/tarjeta-debito-825x293.jpg" class="img-fluid zoom" alt="Imagen 2">
+                    <br>
+                    <br>
+                    <h4>Debito</h4>
+                </div>
+                <div class="col-4">
+                    <img style="border-radius: 35px; box-shadow: 0px 0px 30px rgba(9, 45, 145, 0.5);" src="../../assets/src/img/webpay.jpg" class="img-fluid zoom" alt="Imagen 3">
+                    <br>
+                    <br>
+                    <h4>Cuotas a un Mes</h4>
+                </div>                
+                </div>
+              </div>
             </div>
           </div>
-          <img class="img-fluid" src="../../assets/src/img/ipad.png" alt="..." />
-        </div>
-      </section>
-    </div>
+        </section>
+        
+  </div>
   </section>
 
   <section class="py-5 section-bubble2">
@@ -354,7 +403,9 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
   <section class="py-5 section-bubble4">
 
     <div class="container">
+      
       <section class="projects-section bg-light" id="projects">
+        
         <div class="container px-4 px-lg-5">
             <div class="waviy text-white-50 mx-auto mt-2 mb-5">
               <span style="--i:1">C</span>
@@ -375,7 +426,61 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
               <span style="--i:15">e</span>
               <span style="--i:16">s</span>
             </div>
-      
+            <div class="row">
+              <div class="col-md-2">
+                <div class="image-container custom-cursor">
+                  <a href="#myCarousel12" data-bs-slide-to="0" onclick="scrollToCarousel('#myCarousel12')">
+                    <img src="../../assets/src/img/Vanitorios.svg" class="img-fluid" alt="Imagen 1">
+                  </a>
+                  <h5>Vanitorios</h5>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="image-container custom-cursor">
+                  <a href="#myCarousel12" data-bs-slide-to="1" onclick="scrollToCarousel('#myCarousel12')">
+                    <img src="../../assets/src/img/Tinas.svg" class="img-fluid" alt="Imagen 2">
+                  </a>
+                  <h5>Tinas</h5>
+                </div>
+              </div>
+    
+              <div class="col-md-2">
+                <div class="image-container custom-cursor">
+                  <a href="#myCarousel12" data-bs-slide-to="2" onclick="scrollToCarousel('#myCarousel12')">
+                    <img src="../../assets/src/img/jacuzzi.svg" class="img-fluid" alt="Imagen 3">
+                  </a>
+                  <h5>Jacuzzi</h5>
+                </div>
+              </div>
+    
+              <div class="col-md-2">
+                <div class="image-container custom-cursor">
+                  <a href="#myCarousel12" data-bs-slide-to="3" onclick="scrollToCarousel('#myCarousel12')">
+                    <img src="../../assets/src/img/Lavamanos.svg" class="img-fluid" alt="Imagen 4">
+                  </a>
+                  <h5>Lavamanos</h5>
+                </div>
+              </div>
+    
+              <div class="col-md-2">
+                <div class="image-container custom-cursor">
+                  <a href="#myCarousel12" data-bs-slide-to="4" onclick="scrollToCarousel('#myCarousel12')">
+                    <img src="../../assets/src/img/Lavaplatos.svg" class="img-fluid" alt="Imagen 5">
+                  </a>
+                  <h5>Lavaplatos</h5> 
+                </div>
+              </div>
+    
+              <div class="col-md-2">
+                <div class="image-container custom-cursor">
+                  <a href="#myCarousel12" data-bs-slide-to="5" onclick="scrollToCarousel('#myCarousel12')">
+                    <img src="../../assets/src/img/Rebajes.svg" class="img-fluid" alt="Imagen 6">
+                  </a>
+                  <h5>Rebajes</h5>
+                </div>
+              </div>
+    
+            </div>
             <div id="myCarousel12" class="carousel slide carousel-fade" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-bs-target="#myCarousel12" data-bs-slide-to="0" class="active"></li>
@@ -396,7 +501,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/vanitorio.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -404,7 +509,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/vanitorio2.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -412,7 +517,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/vanitorio3.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -425,7 +530,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/vanitorio4.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -433,7 +538,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/Vanitorio5.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -441,7 +546,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/Vanitorio6.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -464,7 +569,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/Tina.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -472,7 +577,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/Tina2.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -480,7 +585,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/tina3.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -493,7 +598,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/tina3.5.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -501,7 +606,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/tina6.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -509,7 +614,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/tina7.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -523,7 +628,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                 <div class="carousel-item">
                   <div class="mask flex-center">
                     <div class="container">
-                      <h1>Vanitorios</h1>
+                      <h1>Jacuzzi</h1>
       
                       <div class="row align-items-center">
                         <div style="margin-top: 15px;" class="row">
@@ -531,7 +636,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/jazz1.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -539,7 +644,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/jazz2.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -547,7 +652,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/jazz3.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -560,7 +665,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/jazz4.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -568,7 +673,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/jazz5.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -576,74 +681,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
-                              </video>
-                            </div>
-                          </div>
-                        </div>
-                        <br>
-                      </div>
-                      <br>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="mask flex-center">
-                    <div class="container">
-                      <h1>Vanitorios</h1>
-      
-                      <div class="row align-items-center">
-                        <div style="margin-top: 15px;" class="row">
-                          <div class="col-md col-sm-6 col-12">
-                            <div class="video-container custom-cursor">
-                              <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
-                                controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
-                              </video>
-                            </div>
-                          </div>
-                          <div class="col-md col-sm-6 col-12">
-                            <div class="video-container custom-cursor">
-                              <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
-                                controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
-                              </video>
-                            </div>
-                          </div>
-                          <div class="col-md col-sm-6 col-12">
-                            <div class="video-container custom-cursor">
-                              <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
-                                controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
-                              </video>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-      
-                      <div class="row align-items-center">
-                        <div style="margin-top: 15px;" class="row">
-                          <div class="col-md col-sm-6 col-12">
-                            <div class="video-container custom-cursor">
-                              <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
-                                controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
-                              </video>
-                            </div>
-                          </div>
-                          <div class="col-md col-sm-6 col-12">
-                            <div class="video-container custom-cursor">
-                              <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
-                                controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
-                              </video>
-                            </div>
-                          </div>
-                          <div class="col-md col-sm-6 col-12">
-                            <div class="video-container custom-cursor">
-                              <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
-                                controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/jazz6.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -657,8 +695,39 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                 <div class="carousel-item">
                   <div class="mask flex-center">
                     <div class="container">
+                      <h1>Lavamanos</h1>
       
-                      <h1 >Vanitorios</h1>
+                      <div class="row align-items-center">
+                        <div style="margin-top: 15px;" class="row">
+                          <div class="col-md col-sm-6 col-12">
+                            <div class="video-container custom-cursor">
+                              <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
+                                controls>
+                                <source src="../../assets/src/img/vidFelices/lavamanos.mp4" type="video/mp4">
+                              </video>
+                            </div>
+                          </div>
+                          <div class="col-md col-sm-6 col-12">
+                            <div class="video-container custom-cursor">
+                              <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
+                                controls>
+                                <source src="../../assets/src/img/vidFelices/lavamanos2.mp4" type="video/mp4">
+                              </video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      
+                      <br>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="mask flex-center">
+                    <div class="container">
+      
+                      <h1 >Lavaplatos</h1>
       
                       <div class="row align-items-center">
                         <div style="margin-top: 15px;" class="row">
@@ -725,7 +794,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                 <div class="carousel-item">
                   <div class="mask flex-center">
                     <div class="container">
-                      <h1>Vanitorios</h1>
+                      <h1>Rebajes</h1>
       
                       <div class="row align-items-center">
                         <div style="margin-top: 15px;" class="row">
@@ -733,7 +802,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/rebaje1.mp4" type="video/mp4">
                               </video>
                             </div>
                           </div>
@@ -741,50 +810,15 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
                             <div class="video-container custom-cursor">
                               <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
                                 controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
+                                <source src="../../assets/src/img/vidFelices/rebaje2.mp4"  type="video/mp4">
                               </video>
                             </div>
                           </div>
-                          <div class="col-md col-sm-6 col-12">
-                            <div class="video-container custom-cursor">
-                              <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
-                                controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
-                              </video>
-                            </div>
-                          </div>
+
                         </div>
                       </div>
       
-                      <div class="row align-items-center">
-                        <div style="margin-top: 15px;" class="row">
-                          <div class="col-md col-sm-6 col-12">
-                            <div class="video-container custom-cursor">
-                              <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
-                                controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
-                              </video>
-                            </div>
-                          </div>
-                          <div class="col-md col-sm-6 col-12">
-                            <div class="video-container custom-cursor">
-                              <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
-                                controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
-                              </video>
-                            </div>
-                          </div>
-                          <div class="col-md col-sm-6 col-12">
-                            <div class="video-container custom-cursor">
-                              <video class="video-fluid fadeInLeft" onloadedmetadata="this.muted=true" loop preload="auto"
-                                controls>
-                                <source src="../../assets/src/img/bubbles_-_85220 (1080p).mp4" type="video/mp4">
-                              </video>
-                            </div>
-                          </div>
-                        </div>
-                        <br>
-                      </div>
+
                       <br>
                     </div>
                   </div>
@@ -917,7 +951,7 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
     </section>
   </div>
    
-  <a href="#" class="floating-button">
+  <a href="https://api.whatsapp.com/send?phone=56973723988&text=Hola%20Quiero%20Realizar%20Una%20Solicitud%20/%20Consulta" target="_blank" class="floating-button">
     <img src="../../assets/src/img/floatwat.svg" alt="Imagen 1">
 </a>
 
@@ -960,10 +994,11 @@ background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
         </div>
         <div class="social-container">
           <ul class="social-icons">
-            <li><a href="https://www.whatsapp.com" class="social-icon"><img src="../../assets/src/img/wat.svg" alt="Whatsapp"></a></li>
-            <li><a href="https://www.tiktok.com" class="social-icon"><img src="../../assets/src/img/tik.svg" alt="TikTok"></a></li>
-            <li><a href="https://www.instagram.com" class="social-icon"><img src="../../assets/src/img/insta.svg" alt="Instagram"></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=56973723988&text=Hola%20Quiero%20Realizar%20Una%20Solicitud%20/%20Consulta" class="social-icon" target="_blank"><img src="../../assets/src/img/wat.svg" alt="Whatsapp"></a></li>
+            <li><a href="https://www.tiktok.com/@novatinas.cl" class="social-icon" target="_blank"><img src="../../assets/src/img/tik.svg" alt="TikTok"></a></li>
+            <li><a href="https://www.instagram.com/novatinas.cl/?hl=es" class="social-icon" target="_blank"><img src="../../assets/src/img/insta.svg" alt="Instagram"></a></li>
           </ul>
+          
           
         </div>
         <h3 style="color: aliceblue;">Siguenos!!</h3>

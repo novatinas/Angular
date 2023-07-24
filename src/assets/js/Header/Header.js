@@ -216,3 +216,10 @@ elImages.forEach(figure => {
   });
 });
 
+function scrollToCarousel(id) {
+   let element = document.querySelector(id);
+   if (element) {
+       element.scrollIntoView({behavior: "smooth"});
+   }
+}
+ 

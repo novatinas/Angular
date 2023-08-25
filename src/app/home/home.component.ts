@@ -25,6 +25,7 @@ export class HomeComponent {
       { name: 'writer', content: 'Julio Caniuñir' },
       { name: 'charset', content: 'UTF-8' }
     ]);
+    
   }
   
   

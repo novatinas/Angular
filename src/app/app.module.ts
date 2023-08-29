@@ -9,7 +9,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 
-import { GoogleTagManagerModule } from 'angular-google-tag-manager';
+import { GoogleTagManagerService } from "angular-google-tag-manager";
 
 @NgModule({
   declarations: [
@@ -23,12 +23,13 @@ import { GoogleTagManagerModule } from 'angular-google-tag-manager';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    RouterModule,
-    GoogleTagManagerModule.forRoot({
-      id: 'GTM-5G2BM9DH' // Cambia esto por tu propio GTM ID
-    })
+    RouterModule
   ],
-  providers: [Meta],
+  providers: [
+    Meta,
+    { provide: 'googleTagManagerId', useValue: 'GTM-5G2BM9DH' },
+    GoogleTagManagerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

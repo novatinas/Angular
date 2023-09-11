@@ -106,11 +106,11 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  cursor: url('../src/assets/src/img/ElefanteFeliz.svg'), auto;
+  cursor: url('../src/assets/src/img/ElefanteFeliz.png'), auto;
 
 }
 .custom-cursor {
-  cursor: url('../src/assets/src/img/ElefanteFeliz2.svg'), auto;
+  cursor: url('../src/assets/src/img/ElefanteFeliz2.png'), auto;
 }
 hr {
   margin: 1rem 0;
@@ -11705,7 +11705,7 @@ text-align: center;
   opacity: 1;
 }
 
-.carousel-control-next, .carousel-control-prev{height:40px; width:40px; padding:12px; top:50%; bottom:auto; transform:translateY(-50%); background-color: #0d6efd; cursor: url('../src/assets/src/img/ElefanteFeliz2.svg'), auto; }
+.carousel-control-next, .carousel-control-prev{height:40px; width:40px; padding:12px; top:50%; bottom:auto; transform:translateY(-50%); background-color: #0d6efd; cursor: url('../src/assets/src/img/ElefanteFeliz2.png'), auto; }
 
 
 .carousel-item {
